@@ -6,6 +6,9 @@ class Kiosk:
         self.order = Data.Order()
         self.products = []
 
+
+    # data format
+    # productName,productPrice
     def asyncProduct(self):
         f = open(self.productPath, 'r')
 
@@ -19,5 +22,3 @@ class Kiosk:
     def updateProduct(self):
         #TODO update product
         raise NotImplemented('update product func in Kiosk class.')
-
-    
