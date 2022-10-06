@@ -1,8 +1,9 @@
 
 class Product:
-    def __init__(self, name, price):
+    def __init__(self, name, price, _type):
         self.name = name
         self.price = price
+        self.type = _type
 
 
 class Order:
