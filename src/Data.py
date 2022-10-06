@@ -14,7 +14,7 @@ class Order:
 
     def addOrder(self, product):
 
-        if product is not Product.Product:
+        if product is not Product:
             raise AttributeError('addOrder product is not Product.')
 
         self.undoList.append((self.orderList, self.price))
@@ -27,10 +27,14 @@ class Order:
         self.price -= self.orderList[index].price
         self.orderList.remove(self.orderList[index])
 
-    def Undo(self):
+    def undo(self):
         if len(self.undoList) == 0:
             raise IndexError('length of the undoList is 0.')
 
         undoData = self.undoList.pop()
         self.orderList = undoData[0]
         self.price  = undoData[1]
+
+    def saveOrder(self):
+        #TODO save order.txt
+        raise NotImplemented()

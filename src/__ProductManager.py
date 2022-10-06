@@ -1,13 +1,13 @@
 from Data import *
 import pickle
 
-class ProductManager():
+class __ProductManager():
     def __init__(self):
         self.f = open('../res/product.txt', 'rb')
         self.products = {}
-        self.loadData(self)
+        self.__loadData()
 
-    def loadData(self):
+    def __loadData(self):
         while self.f is not None:
             temp = pickle.load(self.f)
             self.products[temp.name] = temp
@@ -31,4 +31,4 @@ class ProductManager():
         return list(self.products.values())
 
 
-instance = ProductManager()
+instance = __ProductManager()
