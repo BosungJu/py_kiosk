@@ -1,20 +1,36 @@
 from __ProductManager import instance
 from PyQt5.QtWidgets import *
+from PIL import Image
 
 class Graphic(QDialog):
     def __init__(self):
         super().__init__()
         self.__initUI()
 
-    # product data 받고 type별로 정보 가공
-    def getProductData(self):
-        products = instance.getData()
+    def __getCategory(self):
+        '''get category data'''
+        self.category = []
+        f = open('../res/data/category.txt')
+        
+        for s in f.readlines():
+            self.category.append(s)
 
-        for product in products.values():
-            if product.type:
-                pass
+
+    def moveSide(self, isLeft: bool):
+        '''moveSide(isLeft : boolean) -> None
+        isLeft는 왼쪽 버튼 눌렀을 때 true'''
+        # TODO go left or right widget
+        pass
+
 
     # product type별로 탭에 product 넣기.
     def __initUI(self):
-        tab = QTabWidget()
-        self.tabs = {} # 탭 만들어서 넣기 {타입 : 탭} 형식으로 넣기
+        self.__getCategory()
+
+        self.tabs = QTabWidget()
+
+        for s in self.category:
+            tab = QWidget()
+            self.tabs.addTab(tab, s)
+            # TODO get product data to instance, and set on widget
+
