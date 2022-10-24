@@ -3,6 +3,7 @@ from __ProductManager import instance
 
 class Kiosk:
     def __init__(self):
+        # start Kiosk
         return
 
     def updateProduct(self):
