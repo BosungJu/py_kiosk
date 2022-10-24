@@ -1,6 +1,6 @@
 
 class Product:
-    def __init__(self, name, price, _type):
+    def __init__(self, name : str, price : int, _type : str):
         '''__init__(name : str, price : int, _type : str)'''
         self.name = name
         self.price = price
@@ -9,9 +9,9 @@ class Product:
 
 class Order:
     def __init__(self):
-        self.undoList = []
-        self.orderList = []
-        self.price = 0
+        self.undoList = [] # 저장 안함
+        self.orderList = [] # Product[]
+        self.price = 0 # int
 
     def addOrder(self, product: Product):
         '''addOrder(product : Product) -> None'''
@@ -36,10 +36,9 @@ class Order:
             raise IndexError('length of the undoList is 0.')
 
         undoData = self.undoList.pop()
-        self.orderList = undoData[0]
-        self.price  = undoData[1]
+        self.orderList, self.price = undoData
 
     def saveOrder(self):
         '''order data save to ../res/data/order.txt'''
-        #TODO save order.txt
+        # TODO save order.txt
         raise NotImplemented()

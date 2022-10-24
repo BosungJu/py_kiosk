@@ -1,3 +1,4 @@
+from Data import *
 from __ProductManager import instance
 from PyQt5.QtWidgets import *
 from PIL import Image
@@ -10,8 +11,8 @@ class Graphic(QDialog):
     def __getCategory(self):
         '''get category data'''
         self.category = []
-        f = open('../res/data/category.txt')
-        
+        f = open('../res/data/category.txt', 'r')
+
         for s in f.readlines():
             self.category.append(s)
 
@@ -23,6 +24,10 @@ class Graphic(QDialog):
         pass
 
 
+    def generateButton(self, product : Product):
+        # TODO return Button
+        raise NotImplemented('generateButton func in Graphic class')
+
     # product type별로 탭에 product 넣기.
     def __initUI(self):
         self.__getCategory()
@@ -31,6 +36,6 @@ class Graphic(QDialog):
 
         for s in self.category:
             tab = QWidget()
-            self.tabs.addTab(tab, s)
             # TODO get product data to instance, and set on widget
-
+            # TODO call generateButton
+            self.tabs.addTab(tab, s)
