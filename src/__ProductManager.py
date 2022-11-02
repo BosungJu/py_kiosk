@@ -1,10 +1,12 @@
 from Data import *
 import pickle
 
+
 class __ProductManager:
-    '''singleton class'''
+    """singleton class"""
+
     def __init__(self):
-        self.f = open('../res/data/product.txt', 'rb')
+        self.f = open('../res/data/product.txt', 'rb') # TODO change DB
         self.products = {}
         self.__loadData()
 
@@ -14,11 +16,11 @@ class __ProductManager:
             self.products[temp.name] = temp
 
     def addData(self, product: Product):
-        '''addData(product : Product) -> None'''
+        """addData(product : Product) -> None"""
         self.products[product.name] = product
 
     def deleteData(self, product: Product):
-        '''deleteData(product : Product) - > None'''
+        """deleteData(product : Product) - > None"""
         self.products.pop(product.name)
 
     def saveData(self):
@@ -34,4 +36,4 @@ class __ProductManager:
         return list(self.products.values())
 
 
-instance = __ProductManager() # instance
+instance = __ProductManager()  # instance
