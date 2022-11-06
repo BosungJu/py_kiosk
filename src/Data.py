@@ -5,6 +5,9 @@ class Product:
         self.price = price
         self.type = _type
 
+    def toString(self):
+        return f'{self.name},{self.price},{self.type}'
+
 
 class Order:
     def __init__(self):
@@ -41,3 +44,9 @@ class Order:
         """order data save to ../res/data/order.txt"""
         # TODO save order.txt
         raise NotImplemented()
+
+    def toString(self):
+        s = ''
+        for product in self.orderList:
+            s += product.toString() + ' '
+        return f'{self.price},{s}'
