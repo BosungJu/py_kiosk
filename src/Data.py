@@ -1,12 +1,14 @@
+from datetime import datetime
+
 class Product:
-    def __init__(self, name: str, price: int, _type: str):
+    def __init__(self, name: str, price: int, categoty: str):
         """__init__(name : str, price : int, _type : str)"""
         self.name = name
         self.price = price
-        self.type = _type
+        self.category = categoty
 
     def toString(self):
-        return f'{self.name},{self.price},{self.type}'
+        return f'{self.name},{self.price},{self.category}'
 
 
 class Order:
@@ -14,6 +16,8 @@ class Order:
         self.undoList = []  # 저장 안함
         self.orderList = []  # Product[]
         self.price = 0  # int
+
+        self.date = datetime.now().strftime('%Y-%M-%D/%H:%M:%S')
 
     def addOrder(self, product: Product):
         """addOrder(product : Product) -> None"""
