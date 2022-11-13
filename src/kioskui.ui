@@ -9,20 +9,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>654</width>
-    <height>780</height>
+    <width>750</width>
+    <height>940</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>654</width>
-    <height>780</height>
+    <width>750</width>
+    <height>940</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>654</width>
-    <height>780</height>
+    <width>750</width>
+    <height>940</height>
    </size>
   </property>
   <property name="tabletTracking">
@@ -46,8 +46,8 @@
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>631</width>
-      <height>731</height>
+      <width>731</width>
+      <height>891</height>
      </rect>
     </property>
     <property name="layoutDirection">
@@ -57,15 +57,15 @@
      <enum>QFrame::NoFrame</enum>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QPushButton" name="btn_order">
       <property name="geometry">
        <rect>
-        <x>120</x>
-        <y>190</y>
-        <width>400</width>
+        <x>160</x>
+        <y>270</y>
+        <width>411</width>
         <height>300</height>
        </rect>
       </property>
@@ -82,159 +82,1499 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>10</y>
-        <width>611</width>
-        <height>371</height>
+        <y>0</y>
+        <width>711</width>
+        <height>551</height>
        </rect>
       </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::North</enum>
+      </property>
       <property name="tabShape">
-       <enum>QTabWidget::Triangular</enum>
+       <enum>QTabWidget::Rounded</enum>
       </property>
       <property name="currentIndex">
        <number>0</number>
       </property>
-      <widget class="QWidget" name="tab_1">
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="movable">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="tab_coffee">
        <attribute name="title">
-        <string>종류 1</string>
+        <string>Coffee</string>
        </attribute>
        <widget class="QPushButton" name="menuBtn_1_1">
         <property name="geometry">
          <rect>
-          <x>0</x>
-          <y>70</y>
+          <x>30</x>
+          <y>20</y>
           <width>140</width>
           <height>200</height>
          </rect>
         </property>
         <property name="text">
-         <string>메뉴 1</string>
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../프로젝트 사진/1)Coffee&amp;Latte/Americano.png</normaloff>../프로젝트 사진/1)Coffee&amp;Latte/Americano.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>150</width>
+          <height>240</height>
+         </size>
         </property>
        </widget>
        <widget class="QPushButton" name="menuBtn_1_2">
         <property name="geometry">
          <rect>
-          <x>150</x>
-          <y>70</y>
+          <x>200</x>
+          <y>20</y>
           <width>140</width>
           <height>200</height>
          </rect>
         </property>
         <property name="text">
-         <string>메뉴 2</string>
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../프로젝트 사진/1)Coffee&amp;Latte/Caramelmacchiato.png</normaloff>../프로젝트 사진/1)Coffee&amp;Latte/Caramelmacchiato.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>150</width>
+          <height>240</height>
+         </size>
         </property>
        </widget>
        <widget class="QPushButton" name="menuBtn_1_3">
         <property name="geometry">
          <rect>
-          <x>300</x>
-          <y>70</y>
+          <x>370</x>
+          <y>20</y>
           <width>140</width>
           <height>200</height>
          </rect>
         </property>
         <property name="text">
-         <string>메뉴 3</string>
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../프로젝트 사진/1)Coffee&amp;Latte/Cafelatte.png</normaloff>../프로젝트 사진/1)Coffee&amp;Latte/Cafelatte.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>150</width>
+          <height>240</height>
+         </size>
         </property>
        </widget>
        <widget class="QPushButton" name="menuBtn_1_4">
         <property name="geometry">
          <rect>
-          <x>450</x>
-          <y>70</y>
+          <x>540</x>
+          <y>20</y>
           <width>140</width>
           <height>200</height>
          </rect>
         </property>
         <property name="text">
-         <string>메뉴 4</string>
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../프로젝트 사진/1)Coffee&amp;Latte/Greentealatte.png</normaloff>../프로젝트 사진/1)Coffee&amp;Latte/Greentealatte.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>150</width>
+          <height>240</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="menuBtn_1_5">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>270</y>
+          <width>140</width>
+          <height>200</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../프로젝트 사진/1)Coffee&amp;Latte/Chocolatelatte.png</normaloff>../프로젝트 사진/1)Coffee&amp;Latte/Chocolatelatte.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>150</width>
+          <height>200</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>230</y>
+          <width>81</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>아메리카노</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>250</y>
+          <width>64</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>3,500</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>250</y>
+          <width>64</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>4,000</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_7">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>230</y>
+          <width>121</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>카라멜마끼아또</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>250</y>
+          <width>64</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>3,500</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_9">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>230</y>
+          <width>121</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>카페라떼</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_10">
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>250</y>
+          <width>64</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>4,000</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_11">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>230</y>
+          <width>121</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>녹차라떼</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_12">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>500</y>
+          <width>64</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>4,500</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_13">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>480</y>
+          <width>81</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>초코라떼</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
         </property>
        </widget>
       </widget>
-      <widget class="QWidget" name="tab_2">
+      <widget class="QWidget" name="tab_sf">
        <attribute name="title">
-        <string>종류 2</string>
+        <string>Smoothe＆Frappuccino</string>
        </attribute>
        <widget class="QPushButton" name="menuBtn_2_2">
         <property name="geometry">
          <rect>
-          <x>150</x>
-          <y>70</y>
+          <x>200</x>
+          <y>20</y>
           <width>140</width>
           <height>200</height>
          </rect>
         </property>
         <property name="text">
-         <string>메뉴 6</string>
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../프로젝트 사진/2)Smoothe&amp;Frappuccino/Citronyogurtsmoothie.png</normaloff>../프로젝트 사진/2)Smoothe&amp;Frappuccino/Citronyogurtsmoothie.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>155</width>
+          <height>240</height>
+         </size>
         </property>
        </widget>
        <widget class="QPushButton" name="menuBtn_2_4">
         <property name="geometry">
          <rect>
-          <x>450</x>
-          <y>70</y>
+          <x>540</x>
+          <y>20</y>
           <width>140</width>
           <height>200</height>
          </rect>
         </property>
         <property name="text">
-         <string>메뉴 8</string>
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../프로젝트 사진/2)Smoothe&amp;Frappuccino/Javachipfrappuccino.png</normaloff>../프로젝트 사진/2)Smoothe&amp;Frappuccino/Javachipfrappuccino.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>155</width>
+          <height>240</height>
+         </size>
         </property>
        </widget>
        <widget class="QPushButton" name="menuBtn_2_1">
         <property name="geometry">
          <rect>
-          <x>0</x>
-          <y>70</y>
+          <x>30</x>
+          <y>20</y>
           <width>140</width>
           <height>200</height>
          </rect>
         </property>
         <property name="text">
-         <string>메뉴 5</string>
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../프로젝트 사진/2)Smoothe&amp;Frappuccino/Yogurtsmoothie.png</normaloff>../프로젝트 사진/2)Smoothe&amp;Frappuccino/Yogurtsmoothie.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>155</width>
+          <height>240</height>
+         </size>
         </property>
        </widget>
        <widget class="QPushButton" name="menuBtn_2_3">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
         <property name="geometry">
          <rect>
-          <x>300</x>
-          <y>70</y>
+          <x>370</x>
+          <y>20</y>
           <width>140</width>
           <height>200</height>
          </rect>
         </property>
         <property name="text">
-         <string>메뉴 7</string>
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../프로젝트 사진/2)Smoothe&amp;Frappuccino/Peachyogurtsmoothie.png</normaloff>../프로젝트 사진/2)Smoothe&amp;Frappuccino/Peachyogurtsmoothie.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>155</width>
+          <height>240</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="menuBtn_2_5">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>270</y>
+          <width>140</width>
+          <height>200</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../프로젝트 사진/2)Smoothe&amp;Frappuccino/Greenteafrappuccino.png</normaloff>../프로젝트 사진/2)Smoothe&amp;Frappuccino/Greenteafrappuccino.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>155</width>
+          <height>240</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_14">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>230</y>
+          <width>131</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>요거트스무디</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_15">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>250</y>
+          <width>64</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>5,000</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_17">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>250</y>
+          <width>64</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>5,200</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_16">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>230</y>
+          <width>131</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>유자요거트스무디</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_18">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>230</y>
+          <width>131</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>피치요거트스무디</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_19">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>250</y>
+          <width>64</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>5,200</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_20">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>230</y>
+          <width>131</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>자바칩프라푸치노</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_21">
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>250</y>
+          <width>64</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>5,500</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_22">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>480</y>
+          <width>131</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>그린티프라푸치노</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_23">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>500</y>
+          <width>64</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>5,500</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
         </property>
        </widget>
       </widget>
       <widget class="QWidget" name="tab_beverage">
        <attribute name="title">
-        <string>음료</string>
+        <string>Ade＆Tea</string>
        </attribute>
        <widget class="QPushButton" name="menuBtn_3_2">
         <property name="geometry">
          <rect>
-          <x>150</x>
-          <y>70</y>
+          <x>200</x>
+          <y>20</y>
           <width>140</width>
           <height>200</height>
          </rect>
         </property>
         <property name="text">
-         <string>메뉴 10</string>
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../프로젝트 사진/3)Ade&amp;Tea/Grapefruitade.png</normaloff>../프로젝트 사진/3)Ade&amp;Tea/Grapefruitade.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>155</width>
+          <height>240</height>
+         </size>
         </property>
        </widget>
        <widget class="QPushButton" name="menuBtn_3_1">
         <property name="geometry">
          <rect>
-          <x>0</x>
-          <y>70</y>
+          <x>30</x>
+          <y>20</y>
           <width>140</width>
           <height>200</height>
          </rect>
         </property>
         <property name="text">
-         <string>메뉴 9</string>
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../프로젝트 사진/3)Ade&amp;Tea/Limeade.png</normaloff>../프로젝트 사진/3)Ade&amp;Tea/Limeade.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>155</width>
+          <height>240</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="menuBtn_3_3">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>20</y>
+          <width>140</width>
+          <height>200</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../프로젝트 사진/3)Ade&amp;Tea/Greengrapeade.png</normaloff>../프로젝트 사진/3)Ade&amp;Tea/Greengrapeade.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>155</width>
+          <height>240</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="menuBtn_3_4">
+        <property name="geometry">
+         <rect>
+          <x>540</x>
+          <y>20</y>
+          <width>140</width>
+          <height>200</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../프로젝트 사진/3)Ade&amp;Tea/Blacktea.png</normaloff>../프로젝트 사진/3)Ade&amp;Tea/Blacktea.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>155</width>
+          <height>240</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="menuBtn_3_5">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>270</y>
+          <width>140</width>
+          <height>200</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../프로젝트 사진/3)Ade&amp;Tea/Greentea.png</normaloff>../프로젝트 사진/3)Ade&amp;Tea/Greentea.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>155</width>
+          <height>240</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="menuBtn_3_7">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>270</y>
+          <width>140</width>
+          <height>200</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../프로젝트 사진/3)Ade&amp;Tea/Lemontea.png</normaloff>../프로젝트 사진/3)Ade&amp;Tea/Lemontea.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>155</width>
+          <height>240</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="menuBtn_3_6">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>270</y>
+          <width>140</width>
+          <height>200</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../프로젝트 사진/3)Ade&amp;Tea/Grapefruittea.png</normaloff>../프로젝트 사진/3)Ade&amp;Tea/Grapefruittea.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>155</width>
+          <height>240</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_24">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>230</y>
+          <width>131</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>청포도에이드</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_25">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>230</y>
+          <width>131</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>자몽에이드</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_26">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>480</y>
+          <width>131</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>녹차</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_27">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>250</y>
+          <width>64</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>3,500</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_28">
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>250</y>
+          <width>64</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>3,000</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_29">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>250</y>
+          <width>64</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>3,500</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_30">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>250</y>
+          <width>64</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>3,700</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_31">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>500</y>
+          <width>64</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>3,000</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_32">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>230</y>
+          <width>131</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>라임에이드</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_33">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>230</y>
+          <width>131</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>홍차</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_34">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>480</y>
+          <width>131</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>레몬티</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_35">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>500</y>
+          <width>64</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>3,300</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_36">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>480</y>
+          <width>131</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>자몽티</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_37">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>500</y>
+          <width>64</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>3,300</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_dessert">
+       <attribute name="title">
+        <string>Dessert</string>
+       </attribute>
+       <widget class="QPushButton" name="menuBtn_4_4">
+        <property name="geometry">
+         <rect>
+          <x>540</x>
+          <y>20</y>
+          <width>140</width>
+          <height>200</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../pngwing.com (3).png</normaloff>../pngwing.com (3).png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>200</width>
+          <height>280</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="menuBtn_4_6">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>270</y>
+          <width>140</width>
+          <height>200</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../프로젝트 사진/4)Dessert/Scone.png</normaloff>../프로젝트 사진/4)Dessert/Scone.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>170</width>
+          <height>280</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="menuBtn_4_7">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>270</y>
+          <width>140</width>
+          <height>200</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../프로젝트 사진/4)Dessert/Macaron.png</normaloff>../프로젝트 사진/4)Dessert/Macaron.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>160</width>
+          <height>280</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="menuBtn_4_1">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>20</y>
+          <width>140</width>
+          <height>200</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../프로젝트 사진/4)Dessert/Redvelvetcake.png</normaloff>../프로젝트 사진/4)Dessert/Redvelvetcake.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>260</width>
+          <height>280</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="menuBtn_4_3">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>20</y>
+          <width>140</width>
+          <height>200</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../pngwing.com (2).png</normaloff>../pngwing.com (2).png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>150</width>
+          <height>280</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="menuBtn_4_5">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>270</y>
+          <width>140</width>
+          <height>200</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../프로젝트 사진/4)Dessert/Mochascone.png</normaloff>../프로젝트 사진/4)Dessert/Mochascone.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>200</width>
+          <height>280</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="menuBtn_4_2">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>20</y>
+          <width>140</width>
+          <height>200</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../pngwing.com (1).png</normaloff>../pngwing.com (1).png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>140</width>
+          <height>250</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="menuBtn_4_8">
+        <property name="geometry">
+         <rect>
+          <x>540</x>
+          <y>270</y>
+          <width>140</width>
+          <height>200</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../프로젝트 사진/4)Dessert/Brownie.png</normaloff>../프로젝트 사진/4)Dessert/Brownie.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>160</width>
+          <height>280</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_51">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>500</y>
+          <width>64</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>3,500</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_39">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>500</y>
+          <width>64</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>3,000</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_43">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>250</y>
+          <width>64</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>6,000</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_46">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>250</y>
+          <width>64</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>5,500</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_38">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>230</y>
+          <width>131</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>치즈케이크</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_49">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>480</y>
+          <width>131</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>스콘</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_50">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>480</y>
+          <width>131</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>마카롱</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_48">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>230</y>
+          <width>131</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>레드벨벳케이크</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_42">
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>250</y>
+          <width>64</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>4,500</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_41">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>250</y>
+          <width>64</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>6,000</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_40">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>230</y>
+          <width>131</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>에그타르트</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_47">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>500</y>
+          <width>64</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>3,500</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_44">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>230</y>
+          <width>131</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>티라미수</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_45">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>480</y>
+          <width>131</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>모카스콘</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_52">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>480</y>
+          <width>131</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>브라우니</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_53">
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>500</y>
+          <width>64</width>
+          <height>15</height>
+         </rect>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="text">
+         <string>5,000</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
         </property>
        </widget>
       </widget>
@@ -242,41 +1582,65 @@
      <widget class="QTextBrowser" name="text_mname">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>450</y>
-        <width>161</width>
+        <x>20</x>
+        <y>680</y>
+        <width>181</width>
         <height>192</height>
        </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>1</number>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustIgnored</enum>
       </property>
      </widget>
      <widget class="QTextBrowser" name="text_count">
       <property name="geometry">
        <rect>
-        <x>180</x>
-        <y>450</y>
-        <width>41</width>
+        <x>210</x>
+        <y>680</y>
+        <width>51</width>
         <height>192</height>
        </rect>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>1</number>
       </property>
      </widget>
      <widget class="QTextBrowser" name="text_price">
       <property name="geometry">
        <rect>
-        <x>230</x>
-        <y>450</y>
-        <width>111</width>
+        <x>270</x>
+        <y>680</y>
+        <width>131</width>
         <height>192</height>
        </rect>
       </property>
       <property name="frameShape">
        <enum>QFrame::StyledPanel</enum>
       </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="lineWidth">
+       <number>1</number>
+      </property>
      </widget>
      <widget class="QPushButton" name="btn_cancel">
       <property name="geometry">
        <rect>
-        <x>370</x>
-        <y>450</y>
+        <x>450</x>
+        <y>680</y>
         <width>120</width>
         <height>192</height>
        </rect>
@@ -288,8 +1652,8 @@
      <widget class="QPushButton" name="btn_pay">
       <property name="geometry">
        <rect>
-        <x>500</x>
-        <y>450</y>
+        <x>590</x>
+        <y>680</y>
         <width>120</width>
         <height>192</height>
        </rect>
@@ -303,7 +1667,7 @@
      <widget class="QLabel" name="label">
       <property name="geometry">
        <rect>
-        <x>90</x>
+        <x>110</x>
         <y>50</y>
         <width>201</width>
         <height>81</height>
@@ -325,8 +1689,8 @@
      <widget class="QLabel" name="label_2">
       <property name="geometry">
        <rect>
-        <x>400</x>
-        <y>120</y>
+        <x>470</x>
+        <y>140</y>
         <width>201</width>
         <height>81</height>
        </rect>
@@ -347,10 +1711,10 @@
      <widget class="QPushButton" name="btn_cancel2">
       <property name="geometry">
        <rect>
-        <x>400</x>
-        <y>460</y>
-        <width>111</width>
-        <height>91</height>
+        <x>450</x>
+        <y>680</y>
+        <width>120</width>
+        <height>192</height>
        </rect>
       </property>
       <property name="text">
@@ -360,10 +1724,10 @@
      <widget class="QPushButton" name="btn_pay2">
       <property name="geometry">
        <rect>
-        <x>520</x>
-        <y>460</y>
-        <width>111</width>
-        <height>91</height>
+        <x>590</x>
+        <y>680</y>
+        <width>120</width>
+        <height>192</height>
        </rect>
       </property>
       <property name="text">
@@ -373,9 +1737,9 @@
      <widget class="QTextBrowser" name="text_total">
       <property name="geometry">
        <rect>
-        <x>390</x>
-        <y>200</y>
-        <width>231</width>
+        <x>430</x>
+        <y>230</y>
+        <width>291</width>
         <height>31</height>
        </rect>
       </property>
@@ -383,10 +1747,10 @@
      <widget class="QTableWidget" name="tableWidget">
       <property name="geometry">
        <rect>
-        <x>0</x>
-        <y>110</y>
+        <x>20</x>
+        <y>140</y>
         <width>377</width>
-        <height>461</height>
+        <height>731</height>
        </rect>
       </property>
       <column>
@@ -421,9 +1785,9 @@
      <widget class="QLabel" name="label_4">
       <property name="geometry">
        <rect>
-        <x>180</x>
-        <y>90</y>
-        <width>271</width>
+        <x>230</x>
+        <y>140</y>
+        <width>281</width>
         <height>71</height>
        </rect>
       </property>
@@ -434,20 +1798,20 @@
      <widget class="QTextBrowser" name="text_finish">
       <property name="geometry">
        <rect>
-        <x>130</x>
-        <y>160</y>
-        <width>371</width>
-        <height>331</height>
+        <x>180</x>
+        <y>220</y>
+        <width>381</width>
+        <height>411</height>
        </rect>
       </property>
      </widget>
      <widget class="QPushButton" name="btn_back">
       <property name="geometry">
        <rect>
-        <x>430</x>
-        <y>540</y>
+        <x>550</x>
+        <y>780</y>
         <width>161</width>
-        <height>101</height>
+        <height>91</height>
        </rect>
       </property>
       <property name="text">
@@ -462,7 +1826,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>654</width>
+     <width>750</width>
      <height>26</height>
     </rect>
    </property>
