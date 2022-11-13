@@ -4,10 +4,10 @@ from PyQt5 import uic
 from Data import *
 from __ProductManager import instance
 
+form_class = uic.loadUiType("kioskUi.ui")[0]
+
 class GraphciMain(QMainWindow, form_class):
     def __init__(self):
-        form_class = uic.loadUiType("kioskUi.ui")[0]
-    
         super().__init__()
         self.setupUi(self)
 
