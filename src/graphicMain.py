@@ -1,13 +1,13 @@
 import sys
 from PyQt5.QtWidgets import *
 from PyQt5 import uic
+from Data import *
+from __ProductManager import instance
 
-form_class = uic.loadUiType("kioskUi.ui")[0]
-
-
-class Kiosk(QMainWindow, form_class):
-
+class GraphciMain(QMainWindow, form_class):
     def __init__(self):
+        form_class = uic.loadUiType("kioskUi.ui")[0]
+    
         super().__init__()
         self.setupUi(self)
 
@@ -32,6 +32,12 @@ class Kiosk(QMainWindow, form_class):
         self.tableWidget.setColumnWidth(2, 120)
         self.order_Count = 0
         self.total = 0
+
+    def startUI(self):
+        app = QApplication(sys.argv)
+        self.center()
+        self.show()
+        app.exec_()
 
     def nextPage(self):
         page = self.stackedWidget.currentIndex()
@@ -399,10 +405,3 @@ class Kiosk(QMainWindow, form_class):
         qr.moveCenter(cp)
         self.move(qr.topLeft())
 
-
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-    Window = Kiosk()
-    Window.center()
-    Window.show()
-    app.exec_()
