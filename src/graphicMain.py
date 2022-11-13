@@ -7,13 +7,14 @@ from __ProductManager import instance
 form_class = uic.loadUiType("kioskUi.ui")[0]
 
 class GraphciMain(QMainWindow, form_class):
+    buttons = []
+    mlist = []
+    clist = []
+    plist = []
+
     def __init__(self):
         super().__init__()
         self.setupUi(self)
-
-        self.mlist = []
-        self.clist = []
-        self.plist = []
 
         self.stackedWidget: QStackedWidget
         self.stackedWidget.setCurrentIndex(0)
@@ -32,6 +33,34 @@ class GraphciMain(QMainWindow, form_class):
         self.tableWidget.setColumnWidth(2, 120)
         self.order_Count = 0
         self.total = 0
+
+        # <editor-fold desc="button appending">
+        self.buttons.append(self.menuBtn_1_1)
+        self.buttons.append(self.menuBtn_1_2)
+        self.buttons.append(self.menuBtn_1_3)
+        self.buttons.append(self.menuBtn_1_4)
+        self.buttons.append(self.menuBtn_1_5)
+        self.buttons.append(self.menuBtn_2_1)
+        self.buttons.append(self.menuBtn_2_2)
+        self.buttons.append(self.menuBtn_2_3)
+        self.buttons.append(self.menuBtn_2_4)
+        self.buttons.append(self.menuBtn_2_5)
+        self.buttons.append(self.menuBtn_3_1)
+        self.buttons.append(self.menuBtn_3_2)
+        self.buttons.append(self.menuBtn_3_3)
+        self.buttons.append(self.menuBtn_3_4)
+        self.buttons.append(self.menuBtn_3_5)
+        self.buttons.append(self.menuBtn_3_6)
+        self.buttons.append(self.menuBtn_3_7)
+        self.buttons.append(self.menuBtn_4_1)
+        self.buttons.append(self.menuBtn_4_2)
+        self.buttons.append(self.menuBtn_4_3)
+        self.buttons.append(self.menuBtn_4_4)
+        self.buttons.append(self.menuBtn_4_5)
+        self.buttons.append(self.menuBtn_4_6)
+        self.buttons.append(self.menuBtn_4_7)
+        self.buttons.append(self.menuBtn_4_8)
+        # </editor-fold>
 
     def startUI(self):
         app = QApplication(sys.argv)
@@ -66,6 +95,10 @@ class GraphciMain(QMainWindow, form_class):
         self.stackedWidget.setCurrentIndex(page - 3)
 
     def orderMenu(self):
+        #
+        # for product in products:
+        # 버튼들도 리스트에 넣어서 처리.
+        #
         self.menuBtn_1_1.clicked.connect(self.buttonClicked1)
         self.menuBtn_1_2.clicked.connect(self.buttonClicked2)
         self.menuBtn_1_3.clicked.connect(self.buttonClicked3)
@@ -91,6 +124,17 @@ class GraphciMain(QMainWindow, form_class):
         self.menuBtn_4_6.clicked.connect(self.buttonClicked23)
         self.menuBtn_4_7.clicked.connect(self.buttonClicked24)
         self.menuBtn_4_8.clicked.connect(self.buttonClicked25)
+
+    def buttonClickedEvent(self, name, price):
+        if name in self.mlist:
+            index = self.mlist.index("아메리카노")
+            self.clist[index] += 1
+            self.plist[index] = price * self.clist[index]
+        else:
+            self.mlist.append(name)
+            self.clist.append(1)
+            self.plist.append(price)
+        self.addMenu()
 
     def buttonClicked1(self):
         if "아메리카노" in self.mlist:
