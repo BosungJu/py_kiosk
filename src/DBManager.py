@@ -1,12 +1,17 @@
-# import DB
+import requests
 
 class DBManager:
     # all functions use pass __sendQuery
     # ex) queryStr = f'select * from product where id={self.where}'
     # 다 선택하려면 where에 True로 넣기.
     # return __sendQuery(queryStr)
+
+    url = 'http://127.0.0.1:8000/'
+
+
     def __sendQuery(self, queryStr):
         # TODO send query and get data
+        requests.request(url=self.url + queryStr)
         return
 
     def selectProduct(self, where='*'):
@@ -15,6 +20,7 @@ class DBManager:
         else:
             query = f'select * from product where id={where};'
 
+        query = 'product/' + query
         return self.__sendQuery(query)
 
 
