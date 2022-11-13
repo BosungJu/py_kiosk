@@ -6,7 +6,7 @@ from __ProductManager import instance
 
 form_class = uic.loadUiType("kioskUi.ui")[0]
 
-class GraphciMain(QMainWindow, form_class):
+class GraphicMain(QMainWindow, form_class):
     buttons = []
     mlist = []
     clist = []
@@ -96,9 +96,15 @@ class GraphciMain(QMainWindow, form_class):
 
     def orderMenu(self):
         #
-        # for product in products:
         # 버튼들도 리스트에 넣어서 처리.
         #
+
+        pcnt = 0
+        # TODO get product data.
+        #for button in self.buttons:
+            # TODO connect button event.
+            # ex) button.connect(lambda: self.buttonClickedEvent(name=name, price=price))
+
         self.menuBtn_1_1.clicked.connect(self.buttonClicked1)
         self.menuBtn_1_2.clicked.connect(self.buttonClicked2)
         self.menuBtn_1_3.clicked.connect(self.buttonClicked3)
