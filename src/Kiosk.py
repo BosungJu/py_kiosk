@@ -1,9 +1,9 @@
 from Data import Order
-from graphicMain import GraphciMain
+from graphicMain import GraphicMain
 from __ProductManager import instance
 
 class Kiosk:
-    graphic = GraphciMain()
+    graphic = GraphicMain()
 
     def __init__(self):
         # TODO start Kiosk
