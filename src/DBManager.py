@@ -14,7 +14,7 @@ class DBManager:
         requests.request(url=self.url + queryStr)
         return
 
-    def selectProduct(self, where='*'):
+    def selectProduct(self, where=True):
         if where:
             query = f'select * from product;'
         else:
@@ -24,7 +24,7 @@ class DBManager:
         return self.__sendQuery(query)
 
 
-    def selectOrder(self, where='*'):
+    def selectOrder(self, where=True):
         # TODO send select * from order where self.where
         return
 
@@ -36,10 +36,10 @@ class DBManager:
         # TODO send insert into order values(dataSet...)
         return
 
-    def deleteProduct(self, where='*'):
+    def deleteProduct(self, where=True):
         # TODO send delete product where self.where
         return
 
-    def deleteOrder(self, where='*'):
+    def deleteOrder(self, where=True):
         # TODO send delete order where self.where
         return
