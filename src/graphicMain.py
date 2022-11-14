@@ -13,6 +13,7 @@ def startUI():
     window.show()
     app.exec_()
 
+
 class GraphicMain(QMainWindow, form_class):
     buttons = []
     mlist = []
@@ -132,7 +133,7 @@ class GraphicMain(QMainWindow, form_class):
 
     def buttonClickedEvent(self, name, price):
         if name in self.mlist:
-            index = self.mlist.index("아메리카노")
+            index = self.mlist.index(name)
             self.clist[index] += 1
             self.plist[index] = price * self.clist[index]
         else:
