@@ -92,6 +92,7 @@ class GraphicMain(QMainWindow, form_class):
 
     def setFirstPage(self):
         page = self.stackedWidget.currentIndex()
+        self.menuTap.setCurrentIndex(0)
         self.stackedWidget.setCurrentIndex(page - 3)
 
     def orderMenu(self):
