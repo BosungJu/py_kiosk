@@ -1,7 +1,7 @@
 from datetime import datetime
 
 class Product:
-    def __init__(self, name: str, price: int, categoty: str):
+    def __init__(self, name: str, price: int, categoty:str=''):
         """__init__(name : str, price : int, _type : str)"""
         self.name = name
         self.price = price
