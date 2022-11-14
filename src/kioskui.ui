@@ -123,7 +123,7 @@
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>../프로젝트 사진/1)Coffee&amp;Latte/Americano.png</normaloff>../프로젝트 사진/1)Coffee&amp;Latte/Americano.png</iconset>
+          <normaloff>../res/image/Americano.png</normaloff>../res/image/Americano.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -146,7 +146,7 @@
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>../프로젝트 사진/1)Coffee&amp;Latte/Caramelmacchiato.png</normaloff>../프로젝트 사진/1)Coffee&amp;Latte/Caramelmacchiato.png</iconset>
+          <normaloff>../res/image/Caramelmacchiato.png</normaloff>../res/image/Caramelmacchiato.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -169,7 +169,7 @@
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>../프로젝트 사진/1)Coffee&amp;Latte/Cafelatte.png</normaloff>../프로젝트 사진/1)Coffee&amp;Latte/Cafelatte.png</iconset>
+          <normaloff>../res/image/Cafelatte.png</normaloff>../res/image/Cafelatte.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -192,7 +192,7 @@
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>../프로젝트 사진/1)Coffee&amp;Latte/Greentealatte.png</normaloff>../프로젝트 사진/1)Coffee&amp;Latte/Greentealatte.png</iconset>
+          <normaloff>../res/image/Greentealatte.png</normaloff>../res/image/Greentealatte.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -215,7 +215,7 @@
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>../프로젝트 사진/1)Coffee&amp;Latte/Chocolatelatte.png</normaloff>../프로젝트 사진/1)Coffee&amp;Latte/Chocolatelatte.png</iconset>
+          <normaloff>../res/image/Chocolatelatte.png</normaloff>../res/image/Chocolatelatte.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -418,7 +418,7 @@
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>../프로젝트 사진/2)Smoothe&amp;Frappuccino/Citronyogurtsmoothie.png</normaloff>../프로젝트 사진/2)Smoothe&amp;Frappuccino/Citronyogurtsmoothie.png</iconset>
+          <normaloff>../res/image/Citronyogurtsmoothie.png</normaloff>../res/image/Citronyogurtsmoothie.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -441,7 +441,7 @@
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>../프로젝트 사진/2)Smoothe&amp;Frappuccino/Javachipfrappuccino.png</normaloff>../프로젝트 사진/2)Smoothe&amp;Frappuccino/Javachipfrappuccino.png</iconset>
+          <normaloff>../res/image/Javachipfrappuccino.png</normaloff>../res/image/Javachipfrappuccino.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -464,7 +464,7 @@
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>../프로젝트 사진/2)Smoothe&amp;Frappuccino/Yogurtsmoothie.png</normaloff>../프로젝트 사진/2)Smoothe&amp;Frappuccino/Yogurtsmoothie.png</iconset>
+          <normaloff>../res/image/Yogurtsmoothie.png</normaloff>../res/image/Yogurtsmoothie.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -490,7 +490,7 @@
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>../프로젝트 사진/2)Smoothe&amp;Frappuccino/Peachyogurtsmoothie.png</normaloff>../프로젝트 사진/2)Smoothe&amp;Frappuccino/Peachyogurtsmoothie.png</iconset>
+          <normaloff>../res/image/Peachyogurtsmoothie.png</normaloff>../res/image/Peachyogurtsmoothie.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -513,7 +513,7 @@
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>../프로젝트 사진/2)Smoothe&amp;Frappuccino/Greenteafrappuccino.png</normaloff>../프로젝트 사진/2)Smoothe&amp;Frappuccino/Greenteafrappuccino.png</iconset>
+          <normaloff>../res/image/Greenteafrappuccino.png</normaloff>../res/image/Greenteafrappuccino.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -716,7 +716,7 @@
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>../프로젝트 사진/3)Ade&amp;Tea/Grapefruitade.png</normaloff>../프로젝트 사진/3)Ade&amp;Tea/Grapefruitade.png</iconset>
+          <normaloff>../res/image/Grapefruitade.png</normaloff>../res/image/Grapefruitade.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -739,7 +739,7 @@
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>../프로젝트 사진/3)Ade&amp;Tea/Limeade.png</normaloff>../프로젝트 사진/3)Ade&amp;Tea/Limeade.png</iconset>
+          <normaloff>../res/image/Limeade.png</normaloff>../res/image/Limeade.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -762,7 +762,7 @@
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>../프로젝트 사진/3)Ade&amp;Tea/Greengrapeade.png</normaloff>../프로젝트 사진/3)Ade&amp;Tea/Greengrapeade.png</iconset>
+          <normaloff>../res/image/Greengrapeade.png</normaloff>../res/image/Greengrapeade.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -785,7 +785,7 @@
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>../프로젝트 사진/3)Ade&amp;Tea/Blacktea.png</normaloff>../프로젝트 사진/3)Ade&amp;Tea/Blacktea.png</iconset>
+          <normaloff>../res/image/Blacktea.png</normaloff>../res/image/Blacktea.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -808,7 +808,7 @@
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>../프로젝트 사진/3)Ade&amp;Tea/Greentea.png</normaloff>../프로젝트 사진/3)Ade&amp;Tea/Greentea.png</iconset>
+          <normaloff>../res/image/Greentea.png</normaloff>../res/image/Greentea.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -831,7 +831,7 @@
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>../프로젝트 사진/3)Ade&amp;Tea/Lemontea.png</normaloff>../프로젝트 사진/3)Ade&amp;Tea/Lemontea.png</iconset>
+          <normaloff>../res/image/Lemontea.png</normaloff>../res/image/Lemontea.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -854,7 +854,7 @@
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>../프로젝트 사진/3)Ade&amp;Tea/Grapefruittea.png</normaloff>../프로젝트 사진/3)Ade&amp;Tea/Grapefruittea.png</iconset>
+          <normaloff>../res/image/Grapefruittea.png</normaloff>../res/image/Grapefruittea.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -1127,7 +1127,7 @@
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>../pngwing.com (3).png</normaloff>../pngwing.com (3).png</iconset>
+          <normaloff>../res/image/pngwing.com (3).png</normaloff>../res/image/pngwing.com (3).png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -1150,7 +1150,7 @@
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>../프로젝트 사진/4)Dessert/Scone.png</normaloff>../프로젝트 사진/4)Dessert/Scone.png</iconset>
+          <normaloff>../res/image/Scone.png</normaloff>../res/image/Scone.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -1173,7 +1173,7 @@
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>../프로젝트 사진/4)Dessert/Macaron.png</normaloff>../프로젝트 사진/4)Dessert/Macaron.png</iconset>
+          <normaloff>../res/image/Macaron.png</normaloff>../res/image/Macaron.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -1196,7 +1196,7 @@
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>../프로젝트 사진/4)Dessert/Redvelvetcake.png</normaloff>../프로젝트 사진/4)Dessert/Redvelvetcake.png</iconset>
+          <normaloff>../res/image/Redvelvetcake.png</normaloff>../res/image/Redvelvetcake.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -1219,7 +1219,7 @@
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>../pngwing.com (2).png</normaloff>../pngwing.com (2).png</iconset>
+          <normaloff>../res/image/pngwing.com (2).png</normaloff>../res/image/pngwing.com (2).png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -1242,7 +1242,7 @@
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>../프로젝트 사진/4)Dessert/Mochascone.png</normaloff>../프로젝트 사진/4)Dessert/Mochascone.png</iconset>
+          <normaloff>../res/image/Mochascone.png</normaloff>../res/image/Mochascone.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -1265,7 +1265,7 @@
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>../pngwing.com (1).png</normaloff>../pngwing.com (1).png</iconset>
+          <normaloff>../res/image/pngwing.com (1).png</normaloff>../res/image/pngwing.com (1).png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -1288,7 +1288,7 @@
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>../프로젝트 사진/4)Dessert/Brownie.png</normaloff>../프로젝트 사진/4)Dessert/Brownie.png</iconset>
+          <normaloff>../res/image/Brownie.png</normaloff>../res/image/Brownie.png</iconset>
         </property>
         <property name="iconSize">
          <size>
