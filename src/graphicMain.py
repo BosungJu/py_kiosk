@@ -1,10 +1,17 @@
 import sys
 from PyQt5.QtWidgets import *
 from PyQt5 import uic
-from Data import *
-from __ProductManager import instance
+from __DBManager import instance
 
-form_class = uic.loadUiType("kioskUi.ui")[0]
+form_class = uic.loadUiType("kioskui.ui")[0]
+
+
+def startUI():
+    app = QApplication(sys.argv)
+    window = GraphicMain()
+    window.center()
+    window.show()
+    app.exec_()
 
 class GraphicMain(QMainWindow, form_class):
     buttons = []
@@ -62,12 +69,6 @@ class GraphicMain(QMainWindow, form_class):
         self.buttons.append(self.menuBtn_4_8)
         # </editor-fold>
 
-    def startUI(self):
-        app = QApplication(sys.argv)
-        self.center()
-        self.show()
-        app.exec_()
-
     def nextPage(self):
         page = self.stackedWidget.currentIndex()
         self.stackedWidget.setCurrentIndex(page + 1)
@@ -96,7 +97,7 @@ class GraphicMain(QMainWindow, form_class):
 
     def orderMenu(self):
         pcnt = 0
-        products = __DBManager.selectProduct(self)
+        products = instance.selectProduct(self)
 
         for button in self.buttons:
             button.connect(lambda: self.buttonClickedEvent(name=products[pcnt].name, price=products[pcnt].price))
