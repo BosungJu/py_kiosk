@@ -1,56 +1,41 @@
 from datetime import datetime
 
 class Product:
-    def __init__(self, name: str, price: int, categoty:str=''):
-        """__init__(name : str, price : int, _type : str)"""
+    def __init__(self, id: int, name: str, price: int, categoty:str=''):
+        """__init__(id : int, name : str, price : int, _type : str)"""
+        self.id = id
         self.name = name
         self.price = price
         self.category = categoty
 
     def toString(self):
-        return f'{self.name},{self.price},{self.category}'
+        return f'{self.id} {self.name} {self.price} {self.category}'
 
 
 class Order:
-    def __init__(self):
-        self.undoList = []  # 저장 안함
-        self.orderList = []  # Product[]
-        self.price = 0  # int
+    def __init__(self, id: int, productIds: str= '', price: int=0, date: str= ''):
+        self.id = id
+        self.orderList = productIds  # Product[]
+        self.price = price  # int
 
-        self.date = datetime.now().strftime('%Y-%M-%D/%H:%M:%S')
+        if date == '':
+            self.date = datetime.now().strftime('%Y-%M-%D/%H:%M:%S')
+        else:
+            self.date = date
 
     def addOrder(self, product: Product):
         """addOrder(product : Product) -> None"""
         if product is not Product:
             raise AttributeError('addOrder product is not Product.')
 
-        self.undoList.append((self.orderList, self.price))
-
-        self.orderList.append(product)
+        self.orderList += f'{product.id} '
         self.price += product.price
 
-    def deleteOrder(self, index: int):
+    def clearOrder(self):
         """deleteOrder(index : int)
         delete from Order"""
-        self.undoList.append((self.orderList, self.price))
-        self.price -= self.orderList[index].price
-        self.orderList.remove(self.orderList[index])
-
-    def undo(self):
-        """previous behavior cancel"""
-        if len(self.undoList) == 0:
-            raise IndexError('length of the undoList is 0.')
-
-        undoData = self.undoList.pop()
-        self.orderList, self.price = undoData
-
-    def saveOrder(self):
-        """order data save to ../res/data/order.txt"""
-        # TODO save order.txt
-        raise NotImplemented()
+        self.orderList = ''
+        self.price = 0
 
     def toString(self):
-        s = ''
-        for product in self.orderList:
-            s += product.toString() + ' '
-        return f'{self.price},{s}'
+        return f'{self.id} {self.date} {self.price} {self.orderList}'

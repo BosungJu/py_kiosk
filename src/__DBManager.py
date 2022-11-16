@@ -12,16 +12,19 @@ class __DBManager:
     def __dataProcessing(self, data, dataType):
         datas = []
         if dataType == "product":
-            for i in range(0, len(data), 2):
-                datas.append(Product(data[i], int(data[i + 1])))
+            for d in data:
+                pStr = d.split(' ')
+                datas.append(Product(pStr[0], pStr[1], pStr[2], pStr[3]))
         else:
-            for i in range(0, len(data), 3):
-                datas.append(Product(data[i], int(data[i + 1]), data[i + 2]))
+            for d in data:
+                oStr = d.split(' ')
+                datas.append(Order(int(oStr[0]), oStr[1], int(oStr[2]), oStr[3]))
         return datas
 
     def __sendQuery(self, queryStr, dataType):
         # TODO send query and get data
-        res = requests.post(url=self.url, data={'query': queryStr})
+        url = self.url + '/' + dataType # ex) http://127.0.0.1:8000/product?data
+        res = requests.post(url=url, data={'query': queryStr})
         data = res.json()['data'].split(';')
         return self.__dataProcessing(data, dataType)
 
@@ -45,7 +48,7 @@ class __DBManager:
         query = 'porder/' + query
         return self.__sendQuery(query, "porder")
 
-    def insertProduct(self, dataSet):
+    def insertProduct(self, *dataSet):
         # TODO send insert into product values(dataSet...)
         query = 'insert into product values('
         for data in dataSet:
@@ -55,7 +58,7 @@ class __DBManager:
         query = 'Product/' + query
         return self.__sendQuery(query, "product")
 
-    def insertOrder(self, dataSet):
+    def insertOrder(self, *dataSet):
         # TODO send insert into order values(dataSet...)
         query = 'insert into porder values('
         for data in dataSet:
