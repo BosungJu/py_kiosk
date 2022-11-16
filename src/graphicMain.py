@@ -3,6 +3,7 @@ from PyQt5.QtWidgets import *
 from PyQt5 import uic
 from __DBManager import instance
 
+# UI 파일 연결
 form_class = uic.loadUiType("kioskui.ui")[0]
 
 
@@ -13,12 +14,13 @@ def startUI():
     window.show()
     app.exec_()
 
-
 class GraphicMain(QMainWindow, form_class):
     buttons = []
     mlist = []
     clist = []
     plist = []
+    products = []
+    orderList = []
 
     def __init__(self):
         super().__init__()
@@ -40,6 +42,10 @@ class GraphicMain(QMainWindow, form_class):
         self.tableWidget.setColumnWidth(2, 120)
         self.order_Count = 0
         self.total = 0
+
+        self.products = instance.selectProduct(True)
+        self.orderList = instance.selectOrder(True)
+        self.order = Order(id=len(self.orderList) + 1)
 
         # <editor-fold desc="button appending">
         self.buttons.append(self.menuBtn_1_1)
@@ -69,6 +75,11 @@ class GraphicMain(QMainWindow, form_class):
         self.buttons.append(self.menuBtn_4_8)
         # </editor-fold>
 
+    def getProductToName(self, name):
+        for product in self.products:
+            if product.name == name:
+                return product
+
     def nextPage(self):
         page = self.stackTable.currentIndex()
         self.stackTable.setCurrentIndex(page + 1)
@@ -82,6 +93,8 @@ class GraphicMain(QMainWindow, form_class):
             self.orderPrint()
 
     def finishPage(self):
+        instance.insertOrder(self.order.orderList)
+
         page = self.stackTable.currentIndex()
         self.stackTable.setCurrentIndex(page + 1)
         self.orderCount()
@@ -98,12 +111,9 @@ class GraphicMain(QMainWindow, form_class):
 
     def orderMenu(self):
         pcnt = 0
-        products = instance.selectProduct(self)
 
-        # 람다로 한 이유
-        #
         for button in self.buttons:
-            button.connect(lambda: self.buttonClickedEvent(name=products[pcnt].name, price=products[pcnt].price))
+            button.connect(lambda: self.buttonClickedEvent(name=self.products[pcnt].name, price=self.products[pcnt].price))
             pcnt += 1
 
     def buttonClickedEvent(self, name, price):
@@ -115,6 +125,8 @@ class GraphicMain(QMainWindow, form_class):
             self.mlist.append(name)
             self.clist.append(1)
             self.plist.append(price)
+
+        self.order.addOrder(self.getProductToName(name))
         self.addMenu()
 
     def orderPrint(self):
@@ -143,6 +155,7 @@ class GraphicMain(QMainWindow, form_class):
         self.text_price.clear()
         self.text_count.clear()
         self.total = 0
+        self.order.clearOrder()
 
     def orderCount(self):
         self.order_Count += 1
