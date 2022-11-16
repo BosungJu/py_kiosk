@@ -106,32 +106,6 @@ class GraphicMain(QMainWindow, form_class):
         for button in self.buttons:
             button.connect(lambda: self.buttonClickedEvent(name=products[pcnt].name, price=products[pcnt].price))
             pcnt += 1
-        #
-        # self.menuBtn_1_1.clicked.connect(self.buttonClicked1)
-        # self.menuBtn_1_2.clicked.connect(self.buttonClicked2)
-        # self.menuBtn_1_3.clicked.connect(self.buttonClicked3)
-        # self.menuBtn_1_4.clicked.connect(self.buttonClicked4)
-        # self.menuBtn_1_5.clicked.connect(self.buttonClicked5)
-        # self.menuBtn_2_1.clicked.connect(self.buttonClicked6)
-        # self.menuBtn_2_2.clicked.connect(self.buttonClicked7)
-        # self.menuBtn_2_3.clicked.connect(self.buttonClicked8)
-        # self.menuBtn_2_4.clicked.connect(self.buttonClicked9)
-        # self.menuBtn_2_5.clicked.connect(self.buttonClicked10)
-        # self.menuBtn_3_1.clicked.connect(self.buttonClicked11)
-        # self.menuBtn_3_2.clicked.connect(self.buttonClicked12)
-        # self.menuBtn_3_3.clicked.connect(self.buttonClicked13)
-        # self.menuBtn_3_4.clicked.connect(self.buttonClicked14)
-        # self.menuBtn_3_5.clicked.connect(self.buttonClicked15)
-        # self.menuBtn_3_6.clicked.connect(self.buttonClicked16)
-        # self.menuBtn_3_7.clicked.connect(self.buttonClicked17)
-        # self.menuBtn_4_1.clicked.connect(self.buttonClicked18)
-        # self.menuBtn_4_2.clicked.connect(self.buttonClicked19)
-        # self.menuBtn_4_3.clicked.connect(self.buttonClicked20)
-        # self.menuBtn_4_4.clicked.connect(self.buttonClicked21)
-        # self.menuBtn_4_5.clicked.connect(self.buttonClicked22)
-        # self.menuBtn_4_6.clicked.connect(self.buttonClicked23)
-        # self.menuBtn_4_7.clicked.connect(self.buttonClicked24)
-        # self.menuBtn_4_8.clicked.connect(self.buttonClicked25)
 
     def buttonClickedEvent(self, name, price):
         if name in self.mlist:
