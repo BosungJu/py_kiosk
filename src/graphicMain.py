@@ -139,7 +139,6 @@ class GraphicMain(QMainWindow, form_class):
         self.mlist.clear()
         self.plist.clear()
         self.clist.clear()
-        self.text_total.clear()
         self.text_mname.clear()
         self.text_price.clear()
         self.text_count.clear()
