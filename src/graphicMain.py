@@ -24,8 +24,7 @@ class GraphicMain(QMainWindow, form_class):
         super().__init__()
         self.setupUi(self)
 
-        self.stackedWidget: QStackedWidget
-        self.stackedWidget.setCurrentIndex(0)
+        self.stackTable.setCurrentIndex(0)
         self.orderMenu()
         self.addMenu()
 
@@ -71,31 +70,31 @@ class GraphicMain(QMainWindow, form_class):
         # </editor-fold>
 
     def nextPage(self):
-        page = self.stackedWidget.currentIndex()
-        self.stackedWidget.setCurrentIndex(page + 1)
+        page = self.stackTable.currentIndex()
+        self.stackTable.setCurrentIndex(page + 1)
 
     def nextOrderPage(self):
-        page = self.stackedWidget.currentIndex()
+        page = self.stackTable.currentIndex()
         if len(self.clist) == 0:
-            self.stackedWidget.currentIndex()
+            self.stackTable.currentIndex()
         else:
-            self.stackedWidget.setCurrentIndex(page + 1)
+            self.stackTable.setCurrentIndex(page + 1)
             self.orderPrint()
 
     def finishPage(self):
-        page = self.stackedWidget.currentIndex()
-        self.stackedWidget.setCurrentIndex(page + 1)
+        page = self.stackTable.currentIndex()
+        self.stackTable.setCurrentIndex(page + 1)
         self.orderCount()
         self.clearOrder()
 
     def prePage(self):
-        page = self.stackedWidget.currentIndex()
-        self.stackedWidget.setCurrentIndex(page - 1)
+        page = self.stackTable.currentIndex()
+        self.stackTable.setCurrentIndex(page - 1)
 
     def setFirstPage(self):
-        page = self.stackedWidget.currentIndex()
+        page = self.stackTable.currentIndex()
         self.menuTap.setCurrentIndex(0)
-        self.stackedWidget.setCurrentIndex(page - 3)
+        self.stackTable.setCurrentIndex(page - 3)
 
     def orderMenu(self):
         pcnt = 0
