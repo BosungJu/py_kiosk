@@ -2,6 +2,7 @@ import sys
 from PyQt5.QtWidgets import *
 from PyQt5 import uic
 from __DBManager import instance
+from Data import *
 
 # UI 파일 연결
 form_class = uic.loadUiType("kioskui.ui")[0]
@@ -35,7 +36,7 @@ class GraphicMain(QMainWindow, form_class):
         self.btn_pay2.clicked.connect(self.finishPage)
         self.btn_cancel.clicked.connect(self.clearOrder)
         self.btn_cancel2.clicked.connect(self.prePage)
-        self.btn_back.clicked.connect(self.firstPage)
+        self.btn_back.clicked.connect(self.setFirstPage)
 
         self.tableWidget.setColumnWidth(0, 120)
         self.tableWidget.setColumnWidth(1, 110)
