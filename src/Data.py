@@ -15,27 +15,30 @@ class Product:
 class Order:
     def __init__(self, id: int, productIds: str= '', price: int=0, date: str= ''):
         self.id = id
-        self.orderList = productIds  # Product[]
+        self.products = productIds  # Product[]
         self.price = price  # int
 
         if date == '':
-            self.date = datetime.now().strftime('%Y-%M-%D/%H:%M:%S')
+            self.date = 'current_timestamp()'
         else:
             self.date = date
 
     def addOrder(self, product: Product):
         """addOrder(product : Product) -> None"""
-        if product is not Product:
+        if type(product).__name__ != 'Product':
             raise AttributeError('addOrder product is not Product.')
 
-        self.orderList += f'{product.id} '
+        self.products += f'{product.id} '
         self.price += product.price
 
     def clearOrder(self):
         """deleteOrder(index : int)
         delete from Order"""
-        self.orderList = ''
+        self.products = ''
         self.price = 0
 
     def toString(self):
-        return f'{self.id} {self.date} {self.price} {self.orderList}'
+        return f'{self.id}, {self.date}, {self.price}, {self.products}'
+
+    def toValues(self):
+        return f'{self.id}, {self.date}, {self.price}, "{self.products}", NULL'
