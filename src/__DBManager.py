@@ -7,10 +7,13 @@ class __DBManager:
     # 다 선택하려면 where에 True로 넣기.
     # return __sendQuery(queryStr)
 
-    url = 'http://127.0.0.1:5000'
+    url = 'http://127.0.0.1:5000/'
 
     def __dataProcessing(self, data, dataType):
         datas = []
+
+        if data[0].get('what') is not None:
+            return []
 
         if dataType == "product":
             for d in data:
@@ -18,22 +21,22 @@ class __DBManager:
         else:
             for d in data:
                 datas.append(Order(int(d['id']), d['date'], int(d['price']), d['products']))
-        print(datas)
 
         return datas
 
     def __sendQuery(self, query):
         # TODO send query and get data
-        url = self.url + '/query' # ex) http://127.0.0.1:5000/product?data
+        url = self.url # ex) http://127.0.0.1:5000/product?data
         res = requests.get(url=url, params=query)
         print(res)
 
-        if res.status_code != 200:
-            print('error')
-            return []
-
-        data = res.json()
-        print(data)
+        if res.status_code != 200: # error가 나오는 경우는 데이터가 없는 경우 밖에 없음.
+            print('error', end=' ')
+            print(query['queryType'], end=' ')
+            print(query['tableName'])
+            data = []
+        else:
+            data = res.json()
         res.close()
         return self.__dataProcessing(data, query['tableName'])
 
@@ -45,8 +48,7 @@ class __DBManager:
 
         return self.__sendQuery(query)
 
-    def selectOrder(self, where=True): #오더 oid
-        # TODO send select * from order where self.where
+    def selectOrder(self, where=True):
         if where:
             query = {'queryType': 'select', 'params': '*', 'tableName': 'porder', 'data': ''}
         else:
@@ -54,23 +56,19 @@ class __DBManager:
 
         return self.__sendQuery(query)
 
-    def insertProduct(self, *dataSet):
-        # TODO send insert into product values(dataSet...)
-        query = {'queryType': 'insert', 'tableName': 'product', 'datas': dataSet}
+    def insertProduct(self, datas):
+        query = {'queryType': 'insert', 'tableName': 'product', 'datas': datas}
         return self.__sendQuery(query)
 
-    def insertOrder(self, *dataSet):
-        # TODO send insert into order values(dataSet...)
-        query = {'queryType': 'insert', 'tableName': 'porder', 'datas': dataSet}
+    def insertOrder(self, datas):
+        query = {'queryType': 'insert', 'tableName': 'porder', 'datas': datas}
         return self.__sendQuery(query)
 
     def deleteProduct(self, where=True):
-        # TODO send delete product where self.where
         query = {'queryType': 'delete', 'tableName': 'product', 'data': where}
         return self.__sendQuery(query)
 
     def deleteOrder(self, where=True):
-        # TODO send delete order where self.where
         query = {'queryType': 'delete', 'tableName': 'porder', 'data': where}
         return self.__sendQuery(query)
 

@@ -7,7 +7,6 @@ from Data import *
 # UI 파일 연결
 form_class = uic.loadUiType("kioskui.ui")[0]
 
-
 def startUI():
     app = QApplication(sys.argv)
     window = GraphicMain()
@@ -27,10 +26,6 @@ class GraphicMain(QMainWindow, form_class):
         super().__init__()
         self.setupUi(self)
 
-        self.stackTable.setCurrentIndex(0)
-        self.orderMenu()
-        self.addMenu()
-
         self.btn_order.clicked.connect(self.nextPage)
         self.btn_pay.clicked.connect(self.nextOrderPage)
         self.btn_pay2.clicked.connect(self.finishPage)
@@ -43,10 +38,6 @@ class GraphicMain(QMainWindow, form_class):
         self.tableWidget.setColumnWidth(2, 120)
         self.order_Count = 0
         self.total = 0
-
-        self.products = instance.selectProduct(True)
-        self.orderList = instance.selectOrder(True)
-        self.order = Order(id=len(self.orderList) + 1)
 
         # <editor-fold desc="button appending">
         self.buttons.append(self.menuBtn_1_1)
@@ -76,6 +67,14 @@ class GraphicMain(QMainWindow, form_class):
         self.buttons.append(self.menuBtn_4_8)
         # </editor-fold>
 
+        self.products = instance.selectProduct(True)
+        self.orderList = instance.selectOrder(True)
+        self.order = Order(id=len(self.orderList) + 1)
+
+        self.stackTable.setCurrentIndex(0)
+        self.orderMenu()
+        self.addMenu()
+
     def getProductToName(self, name):
         for product in self.products:
             if product.name == name:
@@ -94,7 +93,7 @@ class GraphicMain(QMainWindow, form_class):
             self.orderPrint()
 
     def finishPage(self):
-        instance.insertOrder(self.order.orderList)
+        instance.insertOrder(self.order.toValues())
 
         page = self.stackTable.currentIndex()
         self.stackTable.setCurrentIndex(page + 1)
@@ -114,7 +113,11 @@ class GraphicMain(QMainWindow, form_class):
         pcnt = 0
 
         for button in self.buttons:
-            button.connect(lambda: self.buttonClickedEvent(name=self.products[pcnt].name, price=self.products[pcnt].price))
+            product = self.products[pcnt]
+            button.pressed.connect(
+                lambda name=product.name, price=product.price:
+                self.buttonClickedEvent(name, price)
+            )
             pcnt += 1
 
     def buttonClickedEvent(self, name, price):
