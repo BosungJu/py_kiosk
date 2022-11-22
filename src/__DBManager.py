@@ -26,7 +26,7 @@ class __DBManager:
 
     def __sendQuery(self, query):
         # TODO send query and get data
-        url = self.url # ex) http://127.0.0.1:5000/product?data
+        url = self.url # ex) http://127.0.0.1:5000/?query
         res = requests.get(url=url, params=query)
         print(res)
 

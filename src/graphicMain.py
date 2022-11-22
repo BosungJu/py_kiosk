@@ -13,6 +13,10 @@ def startUI():
     window.center()
     window.show()
     app.exec_()
+    resetOrder(window)
+
+def resetOrder(window):
+    window.order = Order(id=orderCount)
 
 class GraphicMain(QMainWindow, form_class):
     buttons = []
@@ -69,7 +73,9 @@ class GraphicMain(QMainWindow, form_class):
 
         self.products = instance.selectProduct(True)
         self.orderList = instance.selectOrder(True)
-        self.order = Order(id=len(self.orderList) + 1)
+        global orderCount
+        orderCount = len(self.orderList) + 1
+        resetOrder(self)
 
         self.stackTable.setCurrentIndex(0)
         self.orderMenu()
@@ -93,12 +99,16 @@ class GraphicMain(QMainWindow, form_class):
             self.orderPrint()
 
     def finishPage(self):
+        global orderCount
         instance.insertOrder(self.order.toValues())
 
         page = self.stackTable.currentIndex()
         self.stackTable.setCurrentIndex(page + 1)
         self.orderCount()
         self.clearOrder()
+        self.orderList.append(self.order)
+        orderCount = len(self.orderList) + 1
+        resetOrder(self)
 
     def prePage(self):
         page = self.stackTable.currentIndex()
